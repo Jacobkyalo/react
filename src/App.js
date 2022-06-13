@@ -8,10 +8,12 @@ import Clock from "./Clock";
 import Events from "./Events";
 import Conditionals from "./Conditionals";
 import Login from "./Login";
+import Lists from "./Lists";
 
 function Hello(props) {
   return <div>Hello {props.name}</div>;
 }
+const numbers = [1, 2, 3, 4, 5, 6];
 
 function App() {
   return (
@@ -22,6 +24,7 @@ function App() {
       <Events />
       <Conditionals isLoggedIn={true} />
       <Login />
+      <Lists numbers={numbers} />
     </div>
   );
 }
