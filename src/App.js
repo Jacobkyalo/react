@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./App.css";
 import Tweet from "./Tweet";
 import Counter from "./Counter";
@@ -9,6 +9,8 @@ import Events from "./Events";
 import Conditionals from "./Conditionals";
 import Login from "./Login";
 import Lists from "./Lists";
+import Form from "./Form";
+import LiftingStateUp from "./LiftingStateUp";
 
 function Hello(props) {
   return <div>Hello {props.name}</div>;
@@ -25,6 +27,8 @@ function App() {
       <Conditionals isLoggedIn={true} />
       <Login />
       <Lists numbers={numbers} />
+      <Form />
+      <LiftingStateUp />
     </div>
   );
 }
